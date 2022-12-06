@@ -1,5 +1,5 @@
 manifest_version = 2
-name = "Empty starter for JavaScript"
+name = "Default starter kit for Expressly"
 description = "An empty application template for the Fastly Compute@Edge environment which simply returns a 200 OK response."
 authors = ["<oss@fastly.com>"]
 language = "javascript"
