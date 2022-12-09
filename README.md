@@ -2,7 +2,7 @@
 
 [![Deploy to Fastly](https://deploy.edgecompute.app/button)](https://deploy.edgecompute.app/deploy)
 
-Expressly is a lightweight and minimalist routing layer for JavaScript apps running on Fastly's Compute@Edge. Get to know the Fastly Compute@Edge environment with a basic Expressly starter that demonstrates routing and middleware. To learn more about Expressly, visit our [documentation](https://expressly.edgecompute.app/).
+Expressly is a lightweight and minimalist routing layer for JavaScript apps running on Fastly's Compute@Edge. Get to know the Fastly Compute@Edge environment with a basic Expressly starter that demonstrates routing and middleware. To learn more about Expressly, check out our [blog post](https://www.fastly.com/blog/write-less-do-more-at-the-edge-introducing-expressly) and visit our [documentation](https://expressly.edgecompute.app/).
 
 **For more details about other starter kits for Compute@Edge, see the [Fastly developer hub](https://developer.fastly.com/solutions/starters)**
 
