@@ -1618,7 +1618,7 @@
     },
     "@fastly/expressly": {
       "version": "git+ssh://git@github.com/fastly/expressly.git#2a6de05984b4063be3c9bddc248b1b729263c86c",
-      "from": "@fastly/expressly@https://github.com/fastly/expressly",
+      "from": "@fastly/expressly@github:fastly/expressly",
       "requires": {
         "@fastly/js-compute": "^0.5.4",
         "cookie": "^0.5.0",
