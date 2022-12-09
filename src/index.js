@@ -4,12 +4,12 @@ import { Router } from "@fastly/expressly";
 
 const router = new Router();
 
-//use middleware to set a header
+// Use middleware to set a header
 router.use((req, res) => {
   res.set("x-powered-by", "expressly");
 });
 
-//GET 200 response
+// GET 200 response
 router.get('/', (req, res) => {
   res.sendStatus(200); // "OK"
 });
