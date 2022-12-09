@@ -1,6 +1,7 @@
 {
   "name": "compute-starter-kit-javascript-empty",
   "version": "0.3.0",
+  "type": "module",
   "main": "src/index.js",
   "author": "oss@fastly.com",
   "license": "MIT",
