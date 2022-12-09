@@ -1,5 +1,5 @@
 import { Router } from "@fastly/expressly";
-<reference types="@fastly/js-compute" />
+/// <reference types="@fastly/js-compute" />
 
 const router = new Router();
 
