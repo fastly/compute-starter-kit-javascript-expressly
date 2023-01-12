@@ -18,7 +18,6 @@
     "@fastly/js-compute": "^1.1.0"
   },
   "scripts": {
-    "prebuild": "webpack",
     "build": "js-compute-runtime bin/index.js bin/main.wasm",
     "deploy": "npm run build && fastly compute deploy"
   }
