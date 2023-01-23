@@ -10,11 +10,12 @@
       "license": "MIT",
       "dependencies": {
         "@fastly/expressly": "github:fastly/expressly",
-        "@fastly/js-compute": "^0.5.12"
+        "@fastly/js-compute": "^1.1.0"
       },
       "devDependencies": {
-        "webpack": "^5.75.0",
-        "webpack-cli": "^5.0.0"
+        "core-js": "^3.19.1",
+        "webpack": "^5.64.0",
+        "webpack-cli": "^4.9.1"
       },
       "engines": {
         "node": ">=16.0.0"
@@ -73,10 +74,10 @@
         "node": ">=16.0.0"
       }
     },
-    "node_modules/@fastly/js-compute": {
-      "version": "0.5.12",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.12.tgz",
-      "integrity": "sha512-GbqQL/ztKyFnD/ZEGeVrLP19Ogs8IxHvPn2jfc1odvGui5v44iWt6JNhOLE8sTZs8wtpilxyH8UUndKbhZlQBw==",
+    "node_modules/@fastly/expressly/node_modules/@fastly/js-compute": {
+      "version": "0.5.15",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.15.tgz",
+      "integrity": "sha512-IPDv+XrWWYCLSrOuNA8gxFma+uN0x7rvPI0o+9z111nSfExYKYlGiHl3wGetvyfJYdzfg8FlbDB+qI33GKeRFg==",
       "dependencies": {
         "@jakechampion/wizer": "^1.5.3",
         "esbuild": "^0.15.16",
@@ -91,10 +92,29 @@
         "npm": "^8"
       }
     },
+    "node_modules/@fastly/js-compute": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-1.1.0.tgz",
+      "integrity": "sha512-fuBQVh9VOqJc/1A/UNgkeEO7J9/HbZLMbhCropzsEdqkMaFrZPinpz8AePMoJSAQon+tPsYLKuMk0JcCF4bjRA==",
+      "dependencies": {
+        "@jakechampion/wizer": "^1.6.0",
+        "esbuild": "^0.15.16",
+        "js-component-tools": "^0.2.2",
+        "tree-sitter": "^0.20.1",
+        "tree-sitter-javascript": "^0.19.0"
+      },
+      "bin": {
+        "js-compute-runtime": "js-compute-runtime-cli.js"
+      },
+      "engines": {
+        "node": "16 - 18",
+        "npm": "^8"
+      }
+    },
     "node_modules/@jakechampion/wizer": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.5.3.tgz",
-      "integrity": "sha512-hSMb5AMjeRi05F9ERoqJ+3BM5jrjkQn/s5A8EIt8drV4K9jHX/3vSTHPGGY8t8nNWhjk5UW4FrBYonIy7gpvtw==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.6.0.tgz",
+      "integrity": "sha512-o9BMmF+4IB0zfMoh14Ds3womotxETcroqaYMWt2gSlBBmqRc+oqG1LXGCJMB6Vp24ZUVxWkVFs2LLXE6Iyz9rg==",
       "bin": {
         "wizer": "wizer.js"
       },
@@ -102,16 +122,16 @@
         "node": ">=16"
       },
       "optionalDependencies": {
-        "@jakechampion/wizer-darwin-arm64": "1.5.3",
-        "@jakechampion/wizer-darwin-x64": "1.5.3",
-        "@jakechampion/wizer-linux-x64": "1.5.3",
-        "@jakechampion/wizer-win32-x64": "1.5.3"
+        "@jakechampion/wizer-darwin-arm64": "1.6.0",
+        "@jakechampion/wizer-darwin-x64": "1.6.0",
+        "@jakechampion/wizer-linux-x64": "1.6.0",
+        "@jakechampion/wizer-win32-x64": "1.6.0"
       }
     },
     "node_modules/@jakechampion/wizer-darwin-arm64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.5.3.tgz",
-      "integrity": "sha512-9Q+UI9YgLIWxiYskJc5KAkWXsHecuGlIh2Ww12LcEgo7l2lq7D/67E4XB4S5iA33IG3kxAwPqAmBmvlYxdU7pg==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.6.0.tgz",
+      "integrity": "sha512-bQdIPdR+Ye0GiNdirVhx0kx14oY2uzwXfh/2dDgteBdcb7mDubzKbdt3ROMyV1UFRVhOtqbthZNk7qLBB6Occg==",
       "cpu": [
         "arm64"
       ],
@@ -124,9 +144,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-darwin-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.5.3.tgz",
-      "integrity": "sha512-tO25Y9dlbjUHyVa79KDk8nuTdBA81Tv/NrzIoKiSJS1lUsv87crAVNVbvazYewkvvJ7HnF89X9zFzmrp0NjL0w==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.6.0.tgz",
+      "integrity": "sha512-b+hdpZbhilsroSJU4Z2t+qj9lz3lr3M0TTyM8vlHODP0j8ZabZwPM8314wuSdSrHM5fZ9qIAO2Q94AUBBOeuRA==",
       "cpu": [
         "x64"
       ],
@@ -139,9 +159,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-linux-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.5.3.tgz",
-      "integrity": "sha512-LCa2Z6ASJnTWqtRSnZrAoVeb+UyV0K5bDYKRHyUrOof0Y8sf5ElrNlM+OgV4QRfP3f/YnOrJ0A44zyIeQjkwwA==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.6.0.tgz",
+      "integrity": "sha512-nOH/wwoN/jaLYBKyCnEQJtqEOrSuXMOWIdnh/vAp5w4sFXuyelyZY0k6g9b8puzLOyXJTrUoYfhHyf2vdLGlxQ==",
       "cpu": [
         "x64"
       ],
@@ -154,9 +174,9 @@
       }
     },
     "node_modules/@jakechampion/wizer-win32-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.5.3.tgz",
-      "integrity": "sha512-8m+7XIcUmibXT7ZSlbseDzFHJg0mqnTL5wKE6ALFFE/jxs/EUq94V5UgX9Whaj6r9LGgbi3//SdE6th/ghhtHQ==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.6.0.tgz",
+      "integrity": "sha512-9xzpraJIhLdOnXTC1DjxjyfV52BBlAZTTAlpnE04GxVRvRGZ6wPi/RdACkg3inAfeTP7A/bTq3BJLql/Hansdw==",
       "cpu": [
         "x64"
       ],
@@ -411,42 +431,34 @@
       }
     },
     "node_modules/@webpack-cli/configtest": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/configtest/-/configtest-2.0.0.tgz",
-      "integrity": "sha512-war4OU8NGjBqU3DP3bx6ciODXIh7dSXcpQq+P4K2Tqyd8L5OjZ7COx9QXx/QdCIwL2qoX09Wr4Cwf7uS4qdEng==",
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/configtest/-/configtest-1.2.0.tgz",
+      "integrity": "sha512-4FB8Tj6xyVkyqjj1OaTqCjXYULB9FMkqQ8yGrZjRDrYh0nOE+7Lhs45WioWQQMV+ceFlE368Ukhe6xdvJM9Egg==",
       "dev": true,
-      "engines": {
-        "node": ">=14.15.0"
-      },
       "peerDependencies": {
-        "webpack": "5.x.x",
-        "webpack-cli": "5.x.x"
+        "webpack": "4.x.x || 5.x.x",
+        "webpack-cli": "4.x.x"
       }
     },
     "node_modules/@webpack-cli/info": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/info/-/info-2.0.0.tgz",
-      "integrity": "sha512-NNxDgbo4VOkNhOlTgY0Elhz3vKpOJq4/PKeKg7r8cmYM+GQA9vDofLYyup8jS6EpUvhNmR30cHTCEIyvXpskwA==",
+      "version": "1.5.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/info/-/info-1.5.0.tgz",
+      "integrity": "sha512-e8tSXZpw2hPl2uMJY6fsMswaok5FdlGNRTktvFk2sD8RjH0hE2+XistawJx1vmKteh4NmGmNUrp+Tb2w+udPcQ==",
       "dev": true,
-      "engines": {
-        "node": ">=14.15.0"
+      "dependencies": {
+        "envinfo": "^7.7.3"
       },
       "peerDependencies": {
-        "webpack": "5.x.x",
-        "webpack-cli": "5.x.x"
+        "webpack-cli": "4.x.x"
       }
     },
     "node_modules/@webpack-cli/serve": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/serve/-/serve-2.0.0.tgz",
-      "integrity": "sha512-Rumq5mHvGXamnOh3O8yLk1sjx8dB30qF1OeR6VC00DIR6SLJ4bwwUGKC4pE7qBFoQyyh0H9sAg3fikYgAqVR0w==",
+      "version": "1.7.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/serve/-/serve-1.7.0.tgz",
+      "integrity": "sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==",
       "dev": true,
-      "engines": {
-        "node": ">=14.15.0"
-      },
       "peerDependencies": {
-        "webpack": "5.x.x",
-        "webpack-cli": "5.x.x"
+        "webpack-cli": "4.x.x"
       },
       "peerDependenciesMeta": {
         "webpack-dev-server": {
@@ -1373,12 +1385,12 @@
       "integrity": "sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew=="
     },
     "node_modules/interpret": {
-      "version": "3.1.1",
-      "resolved": "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz",
-      "integrity": "sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==",
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/interpret/-/interpret-2.2.0.tgz",
+      "integrity": "sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==",
       "dev": true,
       "engines": {
-        "node": ">=10.13.0"
+        "node": ">= 0.10"
       }
     },
     "node_modules/is-core-module": {
@@ -1448,6 +1460,14 @@
       },
       "engines": {
         "node": ">= 10.13.0"
+      }
+    },
+    "node_modules/js-component-tools": {
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/js-component-tools/-/js-component-tools-0.2.3.tgz",
+      "integrity": "sha512-hktKSgBaEk/Ttpl3ejBseeQn4K41wJijEA8YgxGXhyfCf5zT7YdEq1LYn+IYCPENEVgdcPK1c2ntbPKVjWeNJg==",
+      "bin": {
+        "jsct": "cli.mjs"
       }
     },
     "node_modules/json-parse-even-better-errors": {
@@ -1783,15 +1803,15 @@
       "integrity": "sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g=="
     },
     "node_modules/rechoir": {
-      "version": "0.8.0",
-      "resolved": "https://registry.npmjs.org/rechoir/-/rechoir-0.8.0.tgz",
-      "integrity": "sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ==",
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/rechoir/-/rechoir-0.7.1.tgz",
+      "integrity": "sha512-/njmZ8s1wVeR6pjTZ+0nCnv8SpZNRMT2D1RLOJQESlYFDBvwpTA4KWJpZ+sBJ4+vhjILRcK7JIFdGCdxEAAitg==",
       "dev": true,
       "dependencies": {
-        "resolve": "^1.20.0"
+        "resolve": "^1.9.0"
       },
       "engines": {
-        "node": ">= 10.13.0"
+        "node": ">= 0.10"
       }
     },
     "node_modules/resolve": {
@@ -2280,40 +2300,42 @@
       }
     },
     "node_modules/webpack-cli": {
-      "version": "5.0.0",
-      "resolved": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.0.0.tgz",
-      "integrity": "sha512-AACDTo20yG+xn6HPW5xjbn2Be4KUzQPebWXsDMHwPPyKh9OnTOJgZN2Nc+g/FZKV3ObRTYsGvibAvc+5jAUrVA==",
+      "version": "4.10.0",
+      "resolved": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.10.0.tgz",
+      "integrity": "sha512-NLhDfH/h4O6UOy+0LSso42xvYypClINuMNBVVzX4vX98TmTaTUxwRbXdhucbFMd2qLaCTcLq/PdYrvi8onw90w==",
       "dev": true,
       "dependencies": {
         "@discoveryjs/json-ext": "^0.5.0",
-        "@webpack-cli/configtest": "^2.0.0",
-        "@webpack-cli/info": "^2.0.0",
-        "@webpack-cli/serve": "^2.0.0",
+        "@webpack-cli/configtest": "^1.2.0",
+        "@webpack-cli/info": "^1.5.0",
+        "@webpack-cli/serve": "^1.7.0",
         "colorette": "^2.0.14",
-        "commander": "^9.4.1",
+        "commander": "^7.0.0",
         "cross-spawn": "^7.0.3",
-        "envinfo": "^7.7.3",
         "fastest-levenshtein": "^1.0.12",
         "import-local": "^3.0.2",
-        "interpret": "^3.1.1",
-        "rechoir": "^0.8.0",
+        "interpret": "^2.2.0",
+        "rechoir": "^0.7.0",
         "webpack-merge": "^5.7.3"
       },
       "bin": {
         "webpack-cli": "bin/cli.js"
       },
       "engines": {
-        "node": ">=14.15.0"
+        "node": ">=10.13.0"
       },
       "funding": {
         "type": "opencollective",
         "url": "https://opencollective.com/webpack"
       },
       "peerDependencies": {
-        "webpack": "5.x.x"
+        "webpack": "4.x.x || 5.x.x"
       },
       "peerDependenciesMeta": {
         "@webpack-cli/generators": {
+          "optional": true
+        },
+        "@webpack-cli/migrate": {
           "optional": true
         },
         "webpack-bundle-analyzer": {
@@ -2325,12 +2347,12 @@
       }
     },
     "node_modules/webpack-cli/node_modules/commander": {
-      "version": "9.4.1",
-      "resolved": "https://registry.npmjs.org/commander/-/commander-9.4.1.tgz",
-      "integrity": "sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==",
+      "version": "7.2.0",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz",
+      "integrity": "sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==",
       "dev": true,
       "engines": {
-        "node": "^12.20.0 || >=14"
+        "node": ">= 10"
       }
     },
     "node_modules/webpack-merge": {
@@ -2411,58 +2433,72 @@
     },
     "@fastly/expressly": {
       "version": "git+ssh://git@github.com/fastly/expressly.git#2a6de05984b4063be3c9bddc248b1b729263c86c",
-      "from": "@fastly/expressly@https://github.com/fastly/expressly",
+      "from": "@fastly/expressly@github:fastly/expressly",
       "requires": {
         "@fastly/js-compute": "^0.5.4",
         "cookie": "^0.5.0",
         "core-js": "^3.25.5",
         "path-to-regexp": "^6.2.1"
+      },
+      "dependencies": {
+        "@fastly/js-compute": {
+          "version": "0.5.15",
+          "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.15.tgz",
+          "integrity": "sha512-IPDv+XrWWYCLSrOuNA8gxFma+uN0x7rvPI0o+9z111nSfExYKYlGiHl3wGetvyfJYdzfg8FlbDB+qI33GKeRFg==",
+          "requires": {
+            "@jakechampion/wizer": "^1.5.3",
+            "esbuild": "^0.15.16",
+            "tree-sitter": "^0.20.1",
+            "tree-sitter-javascript": "^0.19.0"
+          }
+        }
       }
     },
     "@fastly/js-compute": {
-      "version": "0.5.12",
-      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-0.5.12.tgz",
-      "integrity": "sha512-GbqQL/ztKyFnD/ZEGeVrLP19Ogs8IxHvPn2jfc1odvGui5v44iWt6JNhOLE8sTZs8wtpilxyH8UUndKbhZlQBw==",
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@fastly/js-compute/-/js-compute-1.1.0.tgz",
+      "integrity": "sha512-fuBQVh9VOqJc/1A/UNgkeEO7J9/HbZLMbhCropzsEdqkMaFrZPinpz8AePMoJSAQon+tPsYLKuMk0JcCF4bjRA==",
       "requires": {
-        "@jakechampion/wizer": "^1.5.3",
+        "@jakechampion/wizer": "^1.6.0",
         "esbuild": "^0.15.16",
+        "js-component-tools": "^0.2.2",
         "tree-sitter": "^0.20.1",
         "tree-sitter-javascript": "^0.19.0"
       }
     },
     "@jakechampion/wizer": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.5.3.tgz",
-      "integrity": "sha512-hSMb5AMjeRi05F9ERoqJ+3BM5jrjkQn/s5A8EIt8drV4K9jHX/3vSTHPGGY8t8nNWhjk5UW4FrBYonIy7gpvtw==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer/-/wizer-1.6.0.tgz",
+      "integrity": "sha512-o9BMmF+4IB0zfMoh14Ds3womotxETcroqaYMWt2gSlBBmqRc+oqG1LXGCJMB6Vp24ZUVxWkVFs2LLXE6Iyz9rg==",
       "requires": {
-        "@jakechampion/wizer-darwin-arm64": "1.5.3",
-        "@jakechampion/wizer-darwin-x64": "1.5.3",
-        "@jakechampion/wizer-linux-x64": "1.5.3",
-        "@jakechampion/wizer-win32-x64": "1.5.3"
+        "@jakechampion/wizer-darwin-arm64": "1.6.0",
+        "@jakechampion/wizer-darwin-x64": "1.6.0",
+        "@jakechampion/wizer-linux-x64": "1.6.0",
+        "@jakechampion/wizer-win32-x64": "1.6.0"
       }
     },
     "@jakechampion/wizer-darwin-arm64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.5.3.tgz",
-      "integrity": "sha512-9Q+UI9YgLIWxiYskJc5KAkWXsHecuGlIh2Ww12LcEgo7l2lq7D/67E4XB4S5iA33IG3kxAwPqAmBmvlYxdU7pg==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-arm64/-/wizer-darwin-arm64-1.6.0.tgz",
+      "integrity": "sha512-bQdIPdR+Ye0GiNdirVhx0kx14oY2uzwXfh/2dDgteBdcb7mDubzKbdt3ROMyV1UFRVhOtqbthZNk7qLBB6Occg==",
       "optional": true
     },
     "@jakechampion/wizer-darwin-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.5.3.tgz",
-      "integrity": "sha512-tO25Y9dlbjUHyVa79KDk8nuTdBA81Tv/NrzIoKiSJS1lUsv87crAVNVbvazYewkvvJ7HnF89X9zFzmrp0NjL0w==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-darwin-x64/-/wizer-darwin-x64-1.6.0.tgz",
+      "integrity": "sha512-b+hdpZbhilsroSJU4Z2t+qj9lz3lr3M0TTyM8vlHODP0j8ZabZwPM8314wuSdSrHM5fZ9qIAO2Q94AUBBOeuRA==",
       "optional": true
     },
     "@jakechampion/wizer-linux-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.5.3.tgz",
-      "integrity": "sha512-LCa2Z6ASJnTWqtRSnZrAoVeb+UyV0K5bDYKRHyUrOof0Y8sf5ElrNlM+OgV4QRfP3f/YnOrJ0A44zyIeQjkwwA==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-linux-x64/-/wizer-linux-x64-1.6.0.tgz",
+      "integrity": "sha512-nOH/wwoN/jaLYBKyCnEQJtqEOrSuXMOWIdnh/vAp5w4sFXuyelyZY0k6g9b8puzLOyXJTrUoYfhHyf2vdLGlxQ==",
       "optional": true
     },
     "@jakechampion/wizer-win32-x64": {
-      "version": "1.5.3",
-      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.5.3.tgz",
-      "integrity": "sha512-8m+7XIcUmibXT7ZSlbseDzFHJg0mqnTL5wKE6ALFFE/jxs/EUq94V5UgX9Whaj6r9LGgbi3//SdE6th/ghhtHQ==",
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jakechampion/wizer-win32-x64/-/wizer-win32-x64-1.6.0.tgz",
+      "integrity": "sha512-9xzpraJIhLdOnXTC1DjxjyfV52BBlAZTTAlpnE04GxVRvRGZ6wPi/RdACkg3inAfeTP7A/bTq3BJLql/Hansdw==",
       "optional": true
     },
     "@jridgewell/gen-mapping": {
@@ -2699,23 +2735,25 @@
       }
     },
     "@webpack-cli/configtest": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/configtest/-/configtest-2.0.0.tgz",
-      "integrity": "sha512-war4OU8NGjBqU3DP3bx6ciODXIh7dSXcpQq+P4K2Tqyd8L5OjZ7COx9QXx/QdCIwL2qoX09Wr4Cwf7uS4qdEng==",
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/configtest/-/configtest-1.2.0.tgz",
+      "integrity": "sha512-4FB8Tj6xyVkyqjj1OaTqCjXYULB9FMkqQ8yGrZjRDrYh0nOE+7Lhs45WioWQQMV+ceFlE368Ukhe6xdvJM9Egg==",
       "dev": true,
       "requires": {}
     },
     "@webpack-cli/info": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/info/-/info-2.0.0.tgz",
-      "integrity": "sha512-NNxDgbo4VOkNhOlTgY0Elhz3vKpOJq4/PKeKg7r8cmYM+GQA9vDofLYyup8jS6EpUvhNmR30cHTCEIyvXpskwA==",
+      "version": "1.5.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/info/-/info-1.5.0.tgz",
+      "integrity": "sha512-e8tSXZpw2hPl2uMJY6fsMswaok5FdlGNRTktvFk2sD8RjH0hE2+XistawJx1vmKteh4NmGmNUrp+Tb2w+udPcQ==",
       "dev": true,
-      "requires": {}
+      "requires": {
+        "envinfo": "^7.7.3"
+      }
     },
     "@webpack-cli/serve": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@webpack-cli/serve/-/serve-2.0.0.tgz",
-      "integrity": "sha512-Rumq5mHvGXamnOh3O8yLk1sjx8dB30qF1OeR6VC00DIR6SLJ4bwwUGKC4pE7qBFoQyyh0H9sAg3fikYgAqVR0w==",
+      "version": "1.7.0",
+      "resolved": "https://registry.npmjs.org/@webpack-cli/serve/-/serve-1.7.0.tgz",
+      "integrity": "sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==",
       "dev": true,
       "requires": {}
     },
@@ -3287,9 +3325,9 @@
       "integrity": "sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew=="
     },
     "interpret": {
-      "version": "3.1.1",
-      "resolved": "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz",
-      "integrity": "sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==",
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/interpret/-/interpret-2.2.0.tgz",
+      "integrity": "sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==",
       "dev": true
     },
     "is-core-module": {
@@ -3345,6 +3383,11 @@
         "merge-stream": "^2.0.0",
         "supports-color": "^8.0.0"
       }
+    },
+    "js-component-tools": {
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/js-component-tools/-/js-component-tools-0.2.3.tgz",
+      "integrity": "sha512-hktKSgBaEk/Ttpl3ejBseeQn4K41wJijEA8YgxGXhyfCf5zT7YdEq1LYn+IYCPENEVgdcPK1c2ntbPKVjWeNJg=="
     },
     "json-parse-even-better-errors": {
       "version": "2.3.1",
@@ -3618,12 +3661,12 @@
       }
     },
     "rechoir": {
-      "version": "0.8.0",
-      "resolved": "https://registry.npmjs.org/rechoir/-/rechoir-0.8.0.tgz",
-      "integrity": "sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ==",
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/rechoir/-/rechoir-0.7.1.tgz",
+      "integrity": "sha512-/njmZ8s1wVeR6pjTZ+0nCnv8SpZNRMT2D1RLOJQESlYFDBvwpTA4KWJpZ+sBJ4+vhjILRcK7JIFdGCdxEAAitg==",
       "dev": true,
       "requires": {
-        "resolve": "^1.20.0"
+        "resolve": "^1.9.0"
       }
     },
     "resolve": {
@@ -3958,30 +4001,29 @@
       }
     },
     "webpack-cli": {
-      "version": "5.0.0",
-      "resolved": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-5.0.0.tgz",
-      "integrity": "sha512-AACDTo20yG+xn6HPW5xjbn2Be4KUzQPebWXsDMHwPPyKh9OnTOJgZN2Nc+g/FZKV3ObRTYsGvibAvc+5jAUrVA==",
+      "version": "4.10.0",
+      "resolved": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.10.0.tgz",
+      "integrity": "sha512-NLhDfH/h4O6UOy+0LSso42xvYypClINuMNBVVzX4vX98TmTaTUxwRbXdhucbFMd2qLaCTcLq/PdYrvi8onw90w==",
       "dev": true,
       "requires": {
         "@discoveryjs/json-ext": "^0.5.0",
-        "@webpack-cli/configtest": "^2.0.0",
-        "@webpack-cli/info": "^2.0.0",
-        "@webpack-cli/serve": "^2.0.0",
+        "@webpack-cli/configtest": "^1.2.0",
+        "@webpack-cli/info": "^1.5.0",
+        "@webpack-cli/serve": "^1.7.0",
         "colorette": "^2.0.14",
-        "commander": "^9.4.1",
+        "commander": "^7.0.0",
         "cross-spawn": "^7.0.3",
-        "envinfo": "^7.7.3",
         "fastest-levenshtein": "^1.0.12",
         "import-local": "^3.0.2",
-        "interpret": "^3.1.1",
-        "rechoir": "^0.8.0",
+        "interpret": "^2.2.0",
+        "rechoir": "^0.7.0",
         "webpack-merge": "^5.7.3"
       },
       "dependencies": {
         "commander": {
-          "version": "9.4.1",
-          "resolved": "https://registry.npmjs.org/commander/-/commander-9.4.1.tgz",
-          "integrity": "sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==",
+          "version": "7.2.0",
+          "resolved": "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz",
+          "integrity": "sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==",
           "dev": true
         }
       }

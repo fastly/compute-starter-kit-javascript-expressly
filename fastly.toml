@@ -3,6 +3,3 @@ name = "Default starter kit for Expressly"
 description = "A basic Expressly starter kit that demonstrates simple GET, POST, and middleware functionality."
 authors = ["<oss@fastly.com>"]
 language = "javascript"
-
-[scripts]
-    build = "npm exec js-compute-runtime src/index.js"
