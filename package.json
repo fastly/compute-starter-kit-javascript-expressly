@@ -9,7 +9,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@fastly/expressly": "^1.1.0",
-    "@fastly/js-compute": "^1.2.0"
+    "@fastly/expressly": "^1.2.0",
+    "@fastly/js-compute": "^1.3.0"
   }
 }
