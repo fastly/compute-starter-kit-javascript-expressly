@@ -1,5 +1,5 @@
+authors = ["<oss@fastly.com>"]
+description = "A basic Expressly starter kit that demonstrates simple GET, POST, and middleware functionality."
+language = "javascript"
 manifest_version = 2
 name = "Default starter kit for Expressly"
-description = "A basic Expressly starter kit that demonstrates simple GET, POST, and middleware functionality."
-authors = ["<oss@fastly.com>"]
-language = "javascript"
