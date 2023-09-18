@@ -1,13 +1,8 @@
 {
-  "name": "compute-starter-kit-javascript-empty",
-  "version": "0.4.0",
   "type": "module",
-  "main": "src/index.js",
-  "author": "oss@fastly.com",
-  "license": "MIT",
   "dependencies": {
     "@fastly/expressly": "^1.2.0",
-    "@fastly/js-compute": "^3.0.0"
+    "@fastly/js-compute": "^3.4.0"
   },
   "scripts": {
     "build": "js-compute-runtime ./src/index.js ./bin/main.wasm",
