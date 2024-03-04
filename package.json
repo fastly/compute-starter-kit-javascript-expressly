@@ -1,8 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "@fastly/expressly": "^2.2.1",
-    "@fastly/js-compute": "^3.7.0"
+    "@fastly/expressly": "^2.0.0",
+    "@fastly/js-compute": "^3.0.0"
   },
   "scripts": {
     "build": "js-compute-runtime ./src/index.js ./bin/main.wasm",
