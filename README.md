@@ -12,6 +12,26 @@ This starter is intentionally lightweight, and only requires the [`@fastly/js-co
 
 The starter doesn't require the use of any backends. Once deployed, you will have a Fastly service running on Compute that can generate synthetic responses at the edge.
 
+## Running the application
+
+To create an application using this starter kit, create a new directory for your application and switch to it, and then type the following command:
+
+```shell
+npm create @fastly/compute@latest -- --language=javascript --starter-kit=expressly
+```
+
+To build and run your new application in the local development environment, type the following command:
+
+```shell
+npm run start
+```
+
+To build and deploy your application to your Fastly account, type the following command. The first time you deploy the application, you will be prompted to create a new service in your account.
+
+```shell
+npm run deploy
+```
+
 ## Security issues
 
 Please see our [SECURITY.md](SECURITY.md) for guidance on reporting security-related issues.
